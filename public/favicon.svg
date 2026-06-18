@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="white"/>
+
+  <!-- C principal -->
+  <path
+    d="M356 128
+       A150 150 0 1 0 356 384"
+    fill="none"
+    stroke="#0B2D4D"
+    stroke-width="64"
+    stroke-linecap="square"/>
+
+  <!-- Barras de crecimiento -->
+  <path d="M190 330 L190 285 L235 255 L235 330 Z" fill="#2E9F7A"/>
+  <path d="M250 330 L250 240 L295 210 L295 330 Z" fill="#1F8A70"/>
+  <path d="M310 330 L310 195 L355 165 L355 330 Z" fill="#13705F"/>
+
+  <!-- Flecha ascendente -->
+  <path
+    d="M175 350 L245 295 L285 325 L390 220"
+    fill="none"
+    stroke="#0B2D4D"
+    stroke-width="28"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+
+  <path
+    d="M390 220 L386 285 L445 226 Z"
+    fill="#0B2D4D"/>
+</svg>
