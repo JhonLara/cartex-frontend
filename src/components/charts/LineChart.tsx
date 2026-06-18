@@ -35,7 +35,7 @@ export default function TrendLineChart() {
           width={60}
         />
         <Tooltip
-          formatter={(value: number) => [formatCOP(value), "Recaudo"]}
+          formatter={(value: any) => [typeof value === "number" ? formatCOP(value) : value, "Recaudo"]}
           contentStyle={{ borderRadius: 8, border: "1px solid #e5e7eb" }}
         />
         <Line
