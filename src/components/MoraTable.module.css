@@ -89,3 +89,21 @@
   content: "ⓘ";
   font-size: 0.875rem;
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.75rem 0.625rem;
+    font-size: 0.8125rem;
+  }
+
+  .heading {
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+  }
+}

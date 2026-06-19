@@ -145,3 +145,48 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 768px) {
+  .content {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .cardTitle {
+    font-size: 0.875rem;
+  }
+
+  .cardHeader {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .switchBtn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .metricValue {
+    font-size: 1.25rem;
+  }
+
+  .lineMetric {
+    min-width: auto;
+    padding-top: 0.5rem;
+  }
+
+  .spinnerContainer {
+    min-height: 200px;
+  }
+
+  .spinner {
+    width: 64px;
+    height: 64px;
+    border-width: 6px;
+  }
+}

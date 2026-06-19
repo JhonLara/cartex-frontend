@@ -1,0 +1,13 @@
+.main {
+  flex: 1;
+  background: #f8fafc;
+  min-height: 100vh;
+  margin-left: 240px;
+  transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+  }
+}

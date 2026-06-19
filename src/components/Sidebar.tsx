@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 import styles from "./Sidebar.module.css";
 
 const companies = [
@@ -10,9 +11,24 @@ const companies = [
 
 export default function Sidebar() {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+  const close = () => setIsOpen(false);
 
   return (
-    <aside className={styles.sidebar}>
+    <>
+      <button className={styles.hamburger} onClick={toggle} aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+
+      {isOpen && <div className={styles.overlay} onClick={close} />}
+
+      <aside className={`${styles.sidebar} ${isOpen ? styles.open : ""}`}>
       <div className={styles.logo}>
         <div className={styles.logoIcon}>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -66,5 +82,6 @@ export default function Sidebar() {
         </Link>
       </div>
     </aside>
+    </>
   );
 }
